@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Stockwise — inventory management that flows with your business.">
+  <title>Stockwise — Inventory that flows with your business</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== Header + Navigation Section ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">Stockwise</a>
+
+      <nav class="nav__desktop" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="pricing.html" class="button button--primary nav__cta">Start Free Trial</a>
+
+      <button type="button" popovertarget="mobile-nav" class="nav__trigger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div id="mobile-nav" popover class="mobile-nav">
+      <div class="mobile-nav__top">
+        <span class="logo">Stockwise</span>
+        <button type="button" popovertarget="mobile-nav" popovertargetaction="hide" class="mobile-nav__close"
+          aria-label="Close menu">✕</button>
+      </div>
+      <ul class="mobile-nav__list">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="pricing.html" class="button button--primary mobile-nav__cta">Start Free Trial</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero Section ===== -->
+    <section class="hero" id="top">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <h1 class="hero__title">Inventory that flows with your business</h1>
+          <p class="hero__text">Track stock, manage products, and stay ahead of shortages from one dashboard that adapts
+            to your screen — phone, tablet, or desktop.</p>
+          <div class="hero__actions">
+            <a href="pricing.html" class="button button--primary">Start Free Trial</a>
+            <a href="#how-it-works" class="button button--outline">See How It Works</a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="mockup">
+            <div class="mockup__bar">
+              <span class="mockup__dot"></span>
+              <span class="mockup__dot"></span>
+              <span class="mockup__dot"></span>
+              <span class="mockup__url">app.stockwise.io</span>
+            </div>
+            <div class="mockup__body">
+              <div class="mockup__stats">
+                <div class="mockup__stat">
+                  <span class="mockup__stat-label">TOTAL SKUS</span>
+                  <span class="mockup__stat-value">1,284</span>
+                </div>
+                <div class="mockup__stat">
+                  <span class="mockup__stat-label">IN STOCK</span>
+                  <span class="mockup__stat-value">1,096</span>
+                </div>
+                <div class="mockup__stat">
+                  <span class="mockup__stat-label">LOW STOCK</span>
+                  <span class="mockup__stat-value mockup__stat-value--warn">42</span>
+                </div>
+                <div class="mockup__stat">
+                  <span class="mockup__stat-label">OUT OF STOCK</span>
+                  <span class="mockup__stat-value mockup__stat-value--danger">7</span>
+                </div>
+              </div>
+
+              <div class="mockup__chart" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+
+              <div class="mockup__table">
+                <div class="mockup__row mockup__row--head">
+                  <span>Product</span><span>SKU</span><span>Stock</span><span>Status</span>
+                </div>
+                <div class="mockup__row">
+                  <span>Wireless Mouse</span><span>WM-021</span><span>128</span><span
+                    class="mockup__badge mockup__badge--ok">In Stock</span>
+                </div>
+                <div class="mockup__row">
+                  <span>USB-C Hub</span><span>UC-114</span><span>16</span><span
+                    class="mockup__badge mockup__badge--warn">Low Stock</span>
+                </div>
+                <div class="mockup__row">
+                  <span>Desk Lamp</span><span>DL-203</span><span>0</span><span
+                    class="mockup__badge mockup__badge--danger">Out of Stock</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Trust Strip Section ===== -->
+    <section class="trust">
+      <div class="container trust__row">
+        <div class="trust__item"><span class="trust__number">10,000+</span><span class="trust__label">SKUs tracked
+            daily</span></div>
+        <div class="trust__item"><span class="trust__number">500+</span><span class="trust__label">businesses
+            onboard</span></div>
+        <div class="trust__item"><span class="trust__number">99.9%</span><span class="trust__label">uptime</span></div>
+        <div class="trust__item"><span class="trust__number">24/7</span><span class="trust__label">stock alerts</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Features Teaser Section ===== -->
+    <section class="features container" id="features">
+      <div class="section-intro">
+        <h2>Everything your stock room needs, nothing it doesn't</h2>
+        <p>Built for teams who'd rather glance at a dashboard than dig through spreadsheets.</p>
+      </div>
+
+      <div class="features__grid">
+        <article class="feature-card">
+          <div class="feature-card__inner">
+            <div class="feature-card__icon" aria-hidden="true">◎</div>
+            <div>
+              <h3>Real-Time Tracking</h3>
+              <p>Every sale, return, and restock updates your stock count instantly, across every device your team uses.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card__inner">
+            <div class="feature-card__icon" aria-hidden="true">◐</div>
+            <div>
+              <h3>Low-Stock Alerts</h3>
+              <p>Get notified before you run out, not after. Set your own thresholds per product.</p>
+            </div>
+          </div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card__inner">
+            <div class="feature-card__icon" aria-hidden="true">▦</div>
+            <div>
+              <h3>Multi-Warehouse Support</h3>
+              <p>Track inventory across as many locations as you need, all from a single view.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="features__more"><a href="features.html" class="button button--outline">View All Features</a></p>
+    </section>
+
+    <!-- ===== How It Works Section ===== -->
+    <section class="how" id="how-it-works">
+      <div class="container how__grid">
+        <div class="how__visual" aria-hidden="true">
+          <div class="how__ring how__ring--1"></div>
+          <div class="how__ring how__ring--2"></div>
+          <div class="how__ring how__ring--3"></div>
+        </div>
+        <div class="how__content">
+          <h2>From spreadsheet to system in three steps</h2>
+          <ol class="how__steps">
+            <li>
+              <span class="how__step-number">01</span>
+              <div>
+                <h3>Add your products</h3>
+                <p>Import your existing inventory list, or add products one at a time.</p>
+              </div>
+            </li>
+            <li>
+              <span class="how__step-number">02</span>
+              <div>
+                <h3>Track stock as it moves</h3>
+                <p>Every sale and restock updates your dashboard in real time.</p>
+              </div>
+            </li>
+            <li>
+              <span class="how__step-number">03</span>
+              <div>
+                <h3>Get ahead of shortages</h3>
+                <p>Low-stock alerts land in your inbox before a shelf ever goes empty.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Call To Action Section ===== -->
+    <section class="cta">
+      <div class="container cta__inner">
+        <h2>Ready to stop guessing what's in stock?</h2>
+        <p>Start your free 14-day trial, no credit card required.</p>
+        <a href="pricing.html" class="button button--primary">Start Free Trial</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer Section ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__block">
+          <span class="logo">Stockwise</span>
+          <p>Inventory management that flows with your business.</p>
+        </div>
+        <div class="site-footer__block">
+          <h2 class="site-footer__heading">Product</h2>
+          <p><a href="features.html">Features</a></p>
+          <p><a href="pricing.html">Pricing</a></p>
+        </div>
+        <div class="site-footer__block">
+          <h2 class="site-footer__heading">Company</h2>
+          <p><a href="contact.html">Contact</a></p>
+          <p><a href="index.html">Home</a></p>
+        </div>
+        <div class="site-footer__block">
+          <h2 class="site-footer__heading">Get in Touch</h2>
+          <p><a href="mailto:hello@stockwise.io">hello@stockwise.io</a></p>
+        </div>
+      </div>
+      <p class="site-footer__copyright">&copy; 2026 Stockwise. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

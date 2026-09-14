@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Everything Stockwise does to keep your inventory under control.">
+  <title>Features — Stockwise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== Header + Navigation Section ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">Stockwise</a>
+
+      <nav class="nav__desktop" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html" aria-current="page">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="pricing.html" class="button button--primary nav__cta">Start Free Trial</a>
+
+      <button type="button" popovertarget="mobile-nav" class="nav__trigger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div id="mobile-nav" popover class="mobile-nav">
+      <div class="mobile-nav__top">
+        <span class="logo">Stockwise</span>
+        <button type="button" popovertarget="mobile-nav" popovertargetaction="hide" class="mobile-nav__close"
+          aria-label="Close menu">✕</button>
+      </div>
+      <ul class="mobile-nav__list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html" aria-current="page">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="pricing.html" class="button button--primary mobile-nav__cta">Start Free Trial</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Page Intro Section ===== -->
+    <section class="page-intro container">
+      <h1>Everything you need to run a tighter stock room</h1>
+      <p class="page-intro__text">Three ways Stockwise replaces your spreadsheet, plus a few more that round it out.</p>
+    </section>
+
+    <!-- ===== Feature Spotlight Section ===== -->
+    <section class="container">
+      <div class="spotlight">
+        <div class="spotlight__visual">
+          <div class="mockup mockup--compact">
+            <div class="mockup__bar">
+              <span class="mockup__dot"></span>
+              <span class="mockup__dot"></span>
+              <span class="mockup__dot"></span>
+              <span class="mockup__url">app.stockwise.io/dashboard</span>
+            </div>
+            <div class="mockup__body">
+              <div class="mockup__stats">
+                <div class="mockup__stat">
+                  <span class="mockup__stat-label">TOTAL SKUS</span>
+                  <span class="mockup__stat-value">1,284</span>
+                </div>
+                <div class="mockup__stat">
+                  <span class="mockup__stat-label">IN STOCK</span>
+                  <span class="mockup__stat-value">1,096</span>
+                </div>
+                <div class="mockup__stat">
+                  <span class="mockup__stat-label">LOW STOCK</span>
+                  <span class="mockup__stat-value mockup__stat-value--warn">42</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="spotlight__content">
+          <h2>Know what's on the shelf, right now</h2>
+          <p>No more end-of-day counts. Every sale, return, and restock updates your dashboard the moment it happens, so
+            the number on your screen always matches what's actually in the warehouse.</p>
+        </div>
+      </div>
+
+      <div class="spotlight spotlight--reverse">
+        <div class="spotlight__visual">
+          <div class="mockup mockup--compact">
+            <div class="mockup__bar">
+              <span class="mockup__dot"></span>
+              <span class="mockup__dot"></span>
+              <span class="mockup__dot"></span>
+              <span class="mockup__url">app.stockwise.io/reports</span>
+            </div>
+            <div class="mockup__body">
+              <div class="mockup__chart" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="spotlight__content">
+          <h2>Alerts before the shelf goes empty</h2>
+          <p>Set your own low-stock threshold per product. Stockwise watches the numbers so you don't have to, and lets
+            you know the moment something needs reordering.</p>
+        </div>
+      </div>
+
+      <div class="spotlight">
+        <div class="spotlight__visual">
+          <div class="mockup mockup--compact">
+            <div class="mockup__bar">
+              <span class="mockup__dot"></span>
+              <span class="mockup__dot"></span>
+              <span class="mockup__dot"></span>
+              <span class="mockup__url">app.stockwise.io/products</span>
+            </div>
+            <div class="mockup__body">
+              <div class="mockup__table">
+                <div class="mockup__row mockup__row--head">
+                  <span>Product</span><span>SKU</span><span>Stock</span><span>Status</span>
+                </div>
+                <div class="mockup__row">
+                  <span>Wireless Mouse</span><span>WM-021</span><span>128</span><span
+                    class="mockup__badge mockup__badge--ok">In Stock</span>
+                </div>
+                <div class="mockup__row">
+                  <span>USB-C Hub</span><span>UC-114</span><span>16</span><span
+                    class="mockup__badge mockup__badge--warn">Low Stock</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="spotlight__content">
+          <h2>One view, every warehouse</h2>
+          <p>Track inventory across as many locations as you run, and see it all from a single, unified product list
+            instead of a folder full of spreadsheets.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Features Grid Section ===== -->
+    <section class="features container">
+      <div class="section-intro">
+        <h2>And a few more that round things out</h2>
+      </div>
+
+      <div class="features__grid">
+        <article class="feature-card">
+          <div class="feature-card__inner">
+            <div class="feature-card__icon" aria-hidden="true">◫</div>
+            <div>
+              <h3>Sales &amp; Restock Reports</h3>
+              <p>Understand what's moving and what's sitting still with reports that update themselves.</p>
+            </div>
+          </div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card__inner">
+            <div class="feature-card__icon" aria-hidden="true">▤</div>
+            <div>
+              <h3>Barcode-Ready</h3>
+              <p>Scan products in and out with any standard barcode scanner, no special hardware required.</p>
+            </div>
+          </div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card__inner">
+            <div class="feature-card__icon" aria-hidden="true">◈</div>
+            <div>
+              <h3>Role-Based Access</h3>
+              <p>Give warehouse staff, managers, and accountants exactly the access they need, no more, no less.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Call To Action Section ===== -->
+    <section class="cta">
+      <div class="container cta__inner">
+        <h2>Ready to stop guessing what's in stock?</h2>
+        <p>Start your free 14-day trial, no credit card required.</p>
+        <a href="pricing.html" class="button button--primary">Start Free Trial</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer Section ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__block">
+          <span class="logo">Stockwise</span>
+          <p>Inventory management that flows with your business.</p>
+        </div>
+        <div class="site-footer__block">
+          <h2 class="site-footer__heading">Product</h2>
+          <p><a href="features.html">Features</a></p>
+          <p><a href="pricing.html">Pricing</a></p>
+        </div>
+        <div class="site-footer__block">
+          <h2 class="site-footer__heading">Company</h2>
+          <p><a href="contact.html">Contact</a></p>
+          <p><a href="index.html">Home</a></p>
+        </div>
+        <div class="site-footer__block">
+          <h2 class="site-footer__heading">Get in Touch</h2>
+          <p><a href="mailto:hello@stockwise.io">hello@stockwise.io</a></p>
+        </div>
+      </div>
+      <p class="site-footer__copyright">&copy; 2026 Stockwise. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

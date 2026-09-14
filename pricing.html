@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Simple, transparent pricing for Stockwise inventory management.">
+  <title>Pricing — Stockwise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== Header + Navigation Section ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">Stockwise</a>
+
+      <nav class="nav__desktop" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html" aria-current="page">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="pricing.html" class="button button--primary nav__cta">Start Free Trial</a>
+
+      <button type="button" popovertarget="mobile-nav" class="nav__trigger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div id="mobile-nav" popover class="mobile-nav">
+      <div class="mobile-nav__top">
+        <span class="logo">Stockwise</span>
+        <button type="button" popovertarget="mobile-nav" popovertargetaction="hide" class="mobile-nav__close"
+          aria-label="Close menu">✕</button>
+      </div>
+      <ul class="mobile-nav__list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="pricing.html" aria-current="page">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="pricing.html" class="button button--primary mobile-nav__cta">Start Free Trial</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Page Intro Section ===== -->
+    <section class="page-intro container">
+      <h1>Simple pricing that grows with you</h1>
+      <p class="page-intro__text">No setup fees. Cancel anytime. Every plan starts with a free 14-day trial.</p>
+    </section>
+
+    <!-- ===== Pricing Grid Section ===== -->
+    <section class="container">
+      <div class="pricing__grid">
+        <article class="price-card">
+          <h3>Starter</h3>
+          <p class="price-card__price">$19<span class="price-card__period">/month</span></p>
+          <p>For small teams just getting off spreadsheets.</p>
+          <ul class="price-card__features">
+            <li>Up to 500 SKUs</li>
+            <li>1 warehouse location</li>
+            <li>Low-stock alerts</li>
+            <li>Email support</li>
+          </ul>
+          <a href="contact.html" class="button button--outline">Start Free Trial</a>
+        </article>
+
+        <article class="price-card price-card--featured">
+          <span class="price-card__badge">Most Popular</span>
+          <h3>Growth</h3>
+          <p class="price-card__price">$49<span class="price-card__period">/month</span></p>
+          <p>For teams managing stock across more than one location.</p>
+          <ul class="price-card__features">
+            <li>Up to 5,000 SKUs</li>
+            <li>Up to 5 warehouse locations</li>
+            <li>Low-stock alerts &amp; reports</li>
+            <li>Barcode scanning</li>
+            <li>Priority email support</li>
+          </ul>
+          <a href="contact.html" class="button button--primary">Start Free Trial</a>
+        </article>
+
+        <article class="price-card">
+          <h3>Scale</h3>
+          <p class="price-card__price">$99<span class="price-card__period">/month</span></p>
+          <p>For larger operations that need control over who sees what.</p>
+          <ul class="price-card__features">
+            <li>Unlimited SKUs</li>
+            <li>Unlimited warehouse locations</li>
+            <li>Role-based access</li>
+            <li>Advanced reporting</li>
+            <li>Phone &amp; email support</li>
+          </ul>
+          <a href="contact.html" class="button button--outline">Talk to Sales</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Call To Action Section ===== -->
+    <section class="cta">
+      <div class="container cta__inner">
+        <h2>Not sure which plan fits?</h2>
+        <p>Tell us how you stock, and we'll point you to the right one.</p>
+        <a href="contact.html" class="button button--primary">Contact Us</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer Section ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__block">
+          <span class="logo">Stockwise</span>
+          <p>Inventory management that flows with your business.</p>
+        </div>
+        <div class="site-footer__block">
+          <h2 class="site-footer__heading">Product</h2>
+          <p><a href="features.html">Features</a></p>
+          <p><a href="pricing.html">Pricing</a></p>
+        </div>
+        <div class="site-footer__block">
+          <h2 class="site-footer__heading">Company</h2>
+          <p><a href="contact.html">Contact</a></p>
+          <p><a href="index.html">Home</a></p>
+        </div>
+        <div class="site-footer__block">
+          <h2 class="site-footer__heading">Get in Touch</h2>
+          <p><a href="mailto:hello@stockwise.io">hello@stockwise.io</a></p>
+        </div>
+      </div>
+      <p class="site-footer__copyright">&copy; 2026 Stockwise. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
